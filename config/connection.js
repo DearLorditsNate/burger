@@ -10,6 +10,7 @@ var mysql = require("mysql");
 require("dotenv").config();
 var keys = require("../keys.js");
 
+// Define connection
 var connection = mysql.createConnection({
     host: "localhost",
     port: 3306,
