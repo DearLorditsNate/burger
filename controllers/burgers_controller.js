@@ -12,4 +12,11 @@ router.get("/", function(req, res) {
     });
 });
 
+router.post("/api/burgers", function(req, res) {
+    burger.create(req.body.name, function(data) {
+        console.log(data);
+        res.json(data);
+    });
+});
+
 module.exports = router;
