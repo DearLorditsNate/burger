@@ -19,4 +19,13 @@ router.post("/api/burgers", function(req, res) {
     });
 });
 
+router.put("/api/burgers/:id", function(req, res) {
+    console.log(req.params.id);
+    // burger.update(req.params.id, function(data) {
+    //     console.log(data);
+    //     res.json(data);
+    // });
+    res.send("something");
+});
+
 module.exports = router;
