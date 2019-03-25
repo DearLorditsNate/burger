@@ -1,7 +1,12 @@
+<div class="container">
+    <img src="/assets/img/burger.jpeg" alt="Cartoon burger">
+</div>
+
 <h1>Eat Da Burger!</h1>
 
 <div class="container">
     <div class="left-col">
+        <h2>Eat Me!</h2>
         {{#each burgers}}
             {{#unless devoured}}
                 <div>
@@ -12,6 +17,7 @@
     </div>
 
     <div class="right-col">
+        <h2>Already Eaten...</h2>
         {{#each burgers}}
             {{#if devoured}}
                 <p class="eaten" data-id="{{id}}">{{id}}. {{burger_name}}</p>

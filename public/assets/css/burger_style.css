@@ -15,36 +15,40 @@ body {
     height: 100%;
 }
 
+body {
+    background-color: rgb(236, 226, 129);
+}
+
 h1 {
     color: red;
     text-align: center;
+}
+
+img {
+    max-height: 150px;
 }
 
 .container {
     width: 960px;
     margin: auto;
     text-align: center;
-    background-color: orange;
 }
 
 .left-col {
     width: 49%;
-    background-color: yellow;
     display: inline-block;
-    text-align: left;
     vertical-align: top;
 }
 
 .right-col {
     width: 49%;
-    background-color: blue;
     display: inline-block;
-    text-align: left;
     vertical-align: top;
 }
 
 p {
     padding: 10px;
+    font-size: 18px;
 }
 
 .add-burger {
@@ -59,6 +63,8 @@ p {
 #burger {
     padding: 10px;
     border-radius: 5px;
+    width: 250px;
+    height: 50px;
 }
 
 button {
@@ -67,9 +73,19 @@ button {
     background-color: green;
     color: white;
     border-radius: 5px;
-    font-weight: bold;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 .eaten {
     color: grey;
+}
+
+label {
+    font-size: 22px;
+    font-weight: 700;
 }
