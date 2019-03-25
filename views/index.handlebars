@@ -3,22 +3,19 @@
 <div class="container">
     <div class="left-col">
         {{#each burgers}}
-        <ul>
-            <li>{{id}}</li>
-            <li>{{burger_name}}</li>
-            <li>{{devoured}}</li>
-        </ul>
+            {{#unless devoured}}
+                <p>{{id}}. {{burger_name}}</p>
+            {{/unless}}
         {{/each}}
     </div>
 
     <div class="right-col">
         {{#each burgers}}
-        <ul>
-            <li>{{id}}</li>
-            <li>{{burger_name}}</li>
-            <li>{{devoured}}</li>
-        </ul>
+            {{#if devoured}}
+                <p>{{id}}. {{burger_name}}</p>
+            {{/if}}
         {{/each}}
+       
     </div>
 
 </div>
