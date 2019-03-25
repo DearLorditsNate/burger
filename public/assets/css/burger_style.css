@@ -50,3 +50,26 @@ p {
 .add-burger {
     margin-top: 50px;
 }
+
+.input {
+    margin: 10px;
+    padding: 10px;
+}
+
+#burger {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    margin: 5px;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.eaten {
+    color: grey;
+}
