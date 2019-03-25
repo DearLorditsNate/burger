@@ -4,7 +4,7 @@
     <div class="left-col">
         {{#each burgers}}
             {{#unless devoured}}
-                <p>{{id}}. {{burger_name}}</p>
+                <p data-id="{{id}}">{{id}}. {{burger_name}}</p>
             {{/unless}}
         {{/each}}
     </div>
@@ -12,10 +12,20 @@
     <div class="right-col">
         {{#each burgers}}
             {{#if devoured}}
-                <p>{{id}}. {{burger_name}}</p>
+                <p data-id="{{id}}">{{id}}. {{burger_name}}</p>
             {{/if}}
         {{/each}}
        
     </div>
+</div>
 
+<div class="container add-burger">
+    <form>
+        <div class="form-group">
+            <label for="burger">Burger Name:</label>
+            <input type="text" id="burger" name="name">
+        </div>
+
+        <button type="submit">Add Burger</button>
+    </form>
 </div>
