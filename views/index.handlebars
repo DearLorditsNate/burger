@@ -1,9 +1,12 @@
+{{!-- Top Image --}}
 <div class="container">
     <img src="/assets/img/burger.jpeg" alt="Cartoon burger">
 </div>
 
+{{!-- Title --}}
 <h1>Eat Da Burger!</h1>
 
+{{!-- Left Column | Burgers to be eaten --}}
 <div class="container">
     <div class="left-col">
         <h2>Eat Me!</h2>
@@ -16,6 +19,7 @@
         {{/each}}
     </div>
 
+{{!-- Right Column | Eaten Burgers --}}
     <div class="right-col">
         <h2>Already Eaten...</h2>
         {{#each burgers}}
@@ -23,10 +27,10 @@
                 <p class="eaten" data-id="{{id}}">{{id}}. {{burger_name}}</p>
             {{/if}}
         {{/each}}
-       
     </div>
 </div>
 
+{{!-- Add Burger Form --}}
 <div class="container add-burger">
     <form class="add-form">
         <div class="input">

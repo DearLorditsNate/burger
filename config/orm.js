@@ -1,10 +1,4 @@
-/*
-================================
-Dependences
-================================
-*/
-
-// Connection
+// Dependencies
 var connection = require("./connection.js");
 
 // Define query methods

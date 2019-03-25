@@ -8,7 +8,7 @@ var PORT = process.env.PORT || 8080;
 // Create instance of app
 var app = express();
 
-// Server static files
+// Serve static files
 app.use(express.static("public"));
 
 // Parse application body as JSON
@@ -19,12 +19,12 @@ app.use(express.json());
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
-// Require controller
+// Require controller and use routes
 var routes = require("./controllers/burgers_controller.js");
 
 app.use(routes);
 
-// Start servers
+// Start server
 app.listen(PORT, function () {
     console.log("Server listening on: http://localhost:" + PORT);
 });

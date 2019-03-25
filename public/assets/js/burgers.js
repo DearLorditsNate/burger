@@ -1,5 +1,3 @@
-console.log("testing!");
-
 $(document).ready(function() {
     // Add burger
     $(".add-form").on("submit", function(event) {

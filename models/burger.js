@@ -1,6 +1,7 @@
-// orm
+// Dependencies
 var orm = require("../config/orm.js");
 
+// Burger model
 var burger = {
     all: function(cb) {
         orm.selectAll("burgers", function(res) {

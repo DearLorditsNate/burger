@@ -1,12 +1,5 @@
-/*
-================================
-Dependences
-================================
-*/
-//MySQL
+// Dependencies
 var mysql = require("mysql");
-
-// .env
 require("dotenv").config();
 var keys = require("../keys.js");
 
